@@ -92,6 +92,10 @@ imput {
 p{
    text-align: center;
 }
+.container-footer{
+   font-size: 15px;
+   padding-top: 50px;
+}
 
 /* ==========================================================================
    5.0 - Header
@@ -117,7 +121,7 @@ svg {
 button {
   border: none;
   background-color: transparent;
-  font-size: small;
+  font-size: 16px;
 }
 ul {
   list-style: none;
