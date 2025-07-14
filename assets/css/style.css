@@ -21,7 +21,7 @@
    1.0  Variables
    ========================================================================== */
 :root {
-  --cream1: #f7f7f2;
+  --cream1: #F7F7F2;
   --cream2: #bfbfbf;
   --black: #000000;
   --grey: #222222;
@@ -33,6 +33,7 @@
   --grey6: #d3d3d3;
   --grey7: #d9d9d9;
   --blu: #20b7ca;
+  --n: #c9c9c9;
 }
 /* ==========================================================================
   2.0 - Reset
@@ -51,33 +52,64 @@ body * {
 /* ==========================================================================
   4.0 - Globals
    ========================================================================== */
-.card {
-  display: flex;
-  background-color: var(--grey6);
-  margin: 50px auto;
-  width: 30vw;
-  box-shadow: var(--grey1);
+body{
+   background-color: var(--cream1);
 }
-.item2{
-   display: flex;
+.main {
+  display: flex;
+  flex-direction: column;
+
+  background-image: linear-gradient(
+    to left,
+    rgba(191, 191, 191, 0.5),
+    rgba(191, 191, 191, 1)
+  );
+  opacity: 0.8;
+  margin: 50px auto;
+  border: none;
+  width: 25vw;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+form {
+  width: 100%;
+  font-size:15px;
+  
+}
+.form-label {
+  margin: 0;
+}
+.item {
+  display: flex;
 }
 imput {
   width: 100%;
   border-radius: 15px;
   border-color: var(--grey1);
 }
+.btn-login {
+  background-color: var(--blu);
+  margin: 15px auto;
+  padding: 10px;
+}
+p{
+   text-align: center;
+}
+
 /* ==========================================================================
    5.0 - Header
    ========================================================================== */
 
-.container {
+.container-header {
   background-image: linear-gradient(
     to right,
     rgba(191, 191, 191, 0.5),
     rgba(191, 191, 191, 1)
   );
-  margin-top: 30px;
+  margin: 30px auto;
   height: 70px;
+  width: 90%;
   border-radius: 20px;
   opacity: 0.6;
 }
@@ -90,6 +122,14 @@ button {
   border: none;
   background-color: transparent;
   font-size: small;
+}
+ul {
+  list-style: none;
+  gap: 15px;
+}
+.list-container {
+  display: flex;
+  flex-direction: row;
 }
 /* ==========================================================================
   6.0 - Footer
