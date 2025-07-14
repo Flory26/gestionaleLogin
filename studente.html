@@ -13,11 +13,10 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <!-- header -->
-    <header>
+    <header class="site-header">
       <div class="container-header">
         <div class="row h-100">
-          <div class="col-5 d-flex justify-content-sm-start align-items-center">
+          <div class="col-5 d-flex justify-content-start align-items-center">
             <ul class="list-container">
               <li>
                 <button class="btn-stud" href="#" role="link">Studente</button>
@@ -32,7 +31,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-1 d-flex justify-content-end align-items-center">
+          <div class="col-2 d-flex justify-content-center align-items-center">
             <svg
               width="431"
               height="388"
@@ -46,7 +45,7 @@
               />
             </svg>
           </div>
-          <div class="col-5 d-flex justify-content-end align-items-center">
+          <div class="col-5 d-flex justify-content-center align-items-center">
             <ul class="list-container">
               <li>
                 <a class="btn" href="#" role="button">SEARCH</a>
@@ -59,19 +58,113 @@
         </div>
       </div>
     </header>
-    <!-- main -->
-    <main>
-        <div class="container-main w-75 g-3 m-auto d-flex justify-content-center">
-            <div class="menu">
-            <button type="button" class="btn">Inserisci nuovo Studente</button>
-            <button type="button" class="btn">Vizualiza tutti gli studenti</button>
-            <button type="button" class="btn">Cerca Studente</button>
+    <!-- ./header -->
 
-
-            </div>
+    <main class="site-main w-75 m-auto">
+      <div class="container-menu d-flex flex-column justify-content-center w-100 ">
+        <div class="menu d-flex justify-content-center m-5 g-5">
+          <button type="button" class="btnMenu rounded-3">
+            Inserisci nuovo Studente
+          </button>
+          <button type="button" class="btnMenu rounded-3">
+            Vizualiza tutti gli studenti
+          </button>
+          <button type="button" class="btnMenu rounded-3">
+            Cerca Studente
+          </button>
+        </div>
+        <div class="row h-75">
+          <div class="col-6">
+            <label for="nameStudent " class="form-label">Nome<span class="text-danger">*</span></label>
+            <input
+              type="text"
+              class="form-control rounded-pill"
+              id="nameStudent"
+              placeholder="Inserisci nome studente"
+              required
+            />
+            
+          </div>
+          <div class="col-6">
+            <label for="cognameStudent " class="form-label">Cognome<span class="text-danger">*</span></label>
+            <input
+              type="text"
+              class="form-control rounded-pill"
+              id="surnameStudent"
+              placeholder="Inserisci cognome studente"
+              required
+            />
+          </div>
+          <div class="col-6">
+            <label for="emailStudent " class="form-label">Mail<span class="text-danger">*</span></label>
+            <input
+              type="email"
+              class="form-control rounded-pill"
+              id="emailStudent"
+              placeholder="Inserisci email studente"
+              required
+            />
+          </div>
+          <div class="col-6">
+            <label for="phoneStudent " class="form-label">Telefono<span class="text-danger">*</span></label>
+            <input
+              type="tel"
+              class="form-control rounded-pill"
+              id="phoneStudent"
+              placeholder="Inserisci telefono studente"
+              required
+            />
+          </div>
+          <div class="col-6">
+            <label for="dateBornStudent " class="form-label">DataNascita<span class="text-danger">*</span></label>
+            <input
+              type="date"
+              class="form-control rounded-pill"
+              id="dataBornStudent"
+              placeholder="Inserisci data nascita studente"
+              required
+            />
+          </div>
+          <div class="col-6">
+            <label for="corsoStudent " class="form-label">Corso di iscrizione<span class="text-danger">*</span></label>
+            <input
+              type="text"
+              class="form-control rounded-pill"
+              id="classStudent"
+              placeholder="Inserisci corso di iscrizione studente"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <label for="codiceFiscStudent " class="form-label">CodiceFiscale<span class="text-danger">*</span></label>
+            <input
+              type="text"
+              class="form-control rounded-pill"
+              id="IDcodeStudent"
+              placeholder="Inserisci codice fiscale studente"
+              required
+            />
+          </div>
+          <div class="col-12">
+    <label for="validationTextarea" class="form-label">Note</label>
+    <textarea class="form-control" id="validationTextarea" placeholder="Note aggiuntive" required></textarea>
+    
+  </div>
 
         </div>
+      </div>
     </main>
+    <!--./ main -->
+     <footer class="site-footer">
+      <div class="container-footer">
+        <p>
+          Sede legale: Via del Paradiso, 4 - 01100 Viterbo (VT) C.F. 90097600564
+          P.IVA IT02274260567 - Powered by
+          <a href="indirizzo">valeriocorda.it</a>
+        </p>
+      </div>
+    </footer>
+    <!-- /.site-footer -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"

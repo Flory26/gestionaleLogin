@@ -21,7 +21,7 @@
    1.0  Variables
    ========================================================================== */
 :root {
-  --cream1: #F7F7F2;
+  --cream1: #f7f7f2;
   --cream2: #bfbfbf;
   --black: #000000;
   --grey: #222222;
@@ -52,29 +52,33 @@ body * {
 /* ==========================================================================
   4.0 - Globals
    ========================================================================== */
-body{
-   background-color: var(--cream1);
+body {
+  background-color: var(--cream1);
 }
 .main {
-  display: flex;
-  flex-direction: column;
-   background: linear-gradient(135deg,rgba(201, 201, 201, 1) 0%, rgba(196, 196, 196, 0.17) 92%, rgba(196, 196, 196, 0.13) 96%, rgba(0, 0, 0, 0.1) 100%);
-
+  background: linear-gradient(
+    135deg,
+    rgba(201, 201, 201, 1) 0%,
+    rgba(196, 196, 196, 0.17) 92%,
+    rgba(196, 196, 196, 0.13) 96%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
   margin: 50px auto;
   border-color: var(--grey2);
   width: 25vw;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 30px;
   gap: 25px;
 }
-
 form {
   width: 100%;
-  font-size:15px;
-  
+  font-size: 15px;
+ 
 }
 .form-label {
   margin: 0;
+  font-style: var(--grey2);
+  
 }
 .item {
   display: flex;
@@ -89,20 +93,28 @@ imput {
   margin: 15px auto;
   padding: 10px;
 }
-p{
-   text-align: center;
+.btnMenu {
+  font-size: 14px;
+  background-color: var(--grey4);
+  width: 200px;
+  padding: 8px;
 }
-.container-footer{
-   font-size: 15px;
-   padding-top: 50px;
+p {
+  text-align: center;
 }
-main.site-main{
+main.site-main {
   padding-top: 110px;
 }
+.site-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* ==========================================================================
    5.0 - Header
    ========================================================================== */
-header.site-header{
+header.site-header {
   position: fixed;
   top: 14px;
   width: 100%;
@@ -128,8 +140,13 @@ button {
   background-color: transparent;
   font-size: 16px;
 }
+.btn {
+  font-size: 16px;
+}
+
 ul {
   list-style: none;
+  margin-bottom: 0;
   gap: 15px;
 }
 .list-container {
@@ -139,11 +156,15 @@ ul {
 /* ==========================================================================
   6.0 - Footer
    ========================================================================== */
-   footer.site-footer{
-    position: fixed;
-    width: 100%;
-    bottom: 14px;
-   }
+footer.site-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 14px;
+}
+.container-footer {
+  font-size: 15px;
+  padding-top: 50px;
+}
 /* ==========================================================================
   7.0 - HOME
    ========================================================================== */
