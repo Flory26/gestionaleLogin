@@ -99,6 +99,9 @@ imput {
   width: 200px;
   padding: 8px;
 }
+.btn-menu{
+  background-color: var(--blu);
+}
 p {
   text-align: center;
 }

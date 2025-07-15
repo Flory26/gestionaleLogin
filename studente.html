@@ -61,8 +61,10 @@
     <!-- ./header -->
 
     <main class="site-main w-75 m-auto">
-      <div class="container-menu d-flex flex-column justify-content-center w-100 ">
-        <div class="menu d-flex justify-content-center m-5 g-5">
+      <div
+        class="container-menu d-flex flex-column justify-content-center w-100"
+      >
+        <div class="menu w-75 d-flex justify-content-between m-3">
           <button type="button" class="btnMenu rounded-3">
             Inserisci nuovo Studente
           </button>
@@ -73,9 +75,11 @@
             Cerca Studente
           </button>
         </div>
-        <div class="row h-75">
+        <div class="form row h-75">
           <div class="col-6">
-            <label for="nameStudent " class="form-label">Nome<span class="text-danger">*</span></label>
+            <label for="nameStudent " class="form-label"
+              >Nome<span class="text-danger">*</span></label
+            >
             <input
               type="text"
               class="form-control rounded-pill"
@@ -83,10 +87,11 @@
               placeholder="Inserisci nome studente"
               required
             />
-            
           </div>
           <div class="col-6">
-            <label for="cognameStudent " class="form-label">Cognome<span class="text-danger">*</span></label>
+            <label for="cognameStudent " class="form-label"
+              >Cognome<span class="text-danger">*</span></label
+            >
             <input
               type="text"
               class="form-control rounded-pill"
@@ -96,7 +101,9 @@
             />
           </div>
           <div class="col-6">
-            <label for="emailStudent " class="form-label">Mail<span class="text-danger">*</span></label>
+            <label for="emailStudent " class="form-label"
+              >Mail<span class="text-danger">*</span></label
+            >
             <input
               type="email"
               class="form-control rounded-pill"
@@ -106,7 +113,9 @@
             />
           </div>
           <div class="col-6">
-            <label for="phoneStudent " class="form-label">Telefono<span class="text-danger">*</span></label>
+            <label for="phoneStudent " class="form-label"
+              >Telefono<span class="text-danger">*</span></label
+            >
             <input
               type="tel"
               class="form-control rounded-pill"
@@ -116,7 +125,9 @@
             />
           </div>
           <div class="col-6">
-            <label for="dateBornStudent " class="form-label">DataNascita<span class="text-danger">*</span></label>
+            <label for="dateBornStudent " class="form-label"
+              >DataNascita<span class="text-danger">*</span></label
+            >
             <input
               type="date"
               class="form-control rounded-pill"
@@ -126,9 +137,12 @@
             />
           </div>
           <div class="col-6">
-            <label for="corsoStudent " class="form-label">Corso di iscrizione<span class="text-danger">*</span></label>
+            <label for="corsoStudent " class="form-label"
+              >Corso di iscrizione<span class="text-danger">*</span></label
+            >
             <input
-              type="text"
+              type="dr
+              "
               class="form-control rounded-pill"
               id="classStudent"
               placeholder="Inserisci corso di iscrizione studente"
@@ -136,7 +150,9 @@
             />
           </div>
           <div class="col-12">
-            <label for="codiceFiscStudent " class="form-label">CodiceFiscale<span class="text-danger">*</span></label>
+            <label for="codiceFiscStudent " class="form-label"
+              >CodiceFiscale<span class="text-danger">*</span></label
+            >
             <input
               type="text"
               class="form-control rounded-pill"
@@ -146,16 +162,21 @@
             />
           </div>
           <div class="col-12">
-    <label for="validationTextarea" class="form-label">Note</label>
-    <textarea class="form-control" id="validationTextarea" placeholder="Note aggiuntive" required></textarea>
-    
-  </div>
-
+            <label for="validationTextarea" class="form-label">Note</label>
+            <textarea
+              class="form-control"
+              id="validationTextarea"
+              placeholder="Note aggiuntive"
+              required
+            ></textarea>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <button class="btn-menu m-2 p-2 rounded-pill" type="button">Inserisci nuovo studente</button>
         </div>
       </div>
     </main>
     <!--./ main -->
-     <footer class="site-footer">
+    <footer class="site-footer">
       <div class="container-footer">
         <p>
           Sede legale: Via del Paradiso, 4 - 01100 Viterbo (VT) C.F. 90097600564
